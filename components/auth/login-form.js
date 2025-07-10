@@ -32,6 +32,7 @@ export function LoginForm() {
       }
     } catch (error) {
       toast.error('An unexpected error occurred. Please try again.');
+      console.error('Login error:', error);
     } finally {
       setLoading(false);
     }
